@@ -1,4 +1,4 @@
-# Proyecto TFM - Desarrollo de una aplicación web para [nombre del proyecto]
+# Proyecto TFM - Desarrollo de una aplicación web para [GYM]
 
 ## Descripción
 
