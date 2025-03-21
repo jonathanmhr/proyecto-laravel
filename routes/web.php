@@ -4,6 +4,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\ClaseController;
+use App\Http\Controllers\ReservaController;
+
 
 
 Route::get('/', function () {
@@ -24,6 +27,8 @@ Route::get('login', [AuthenticatedSessionController::class, 'create'])->name('lo
 Route::post('login', [AuthenticatedSessionController::class, 'store']);
 Route::get('register', [RegisteredUserController::class, 'create'])->name('register');
 Route::post('register', [RegisteredUserController::class, 'store']);
+Route::get('/clases', [ClaseController::class, 'index']);
+Route::post('/reservar', [ReservaController::class, 'store']);
 
 require __DIR__.'/auth.php';
 
