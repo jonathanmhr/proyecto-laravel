@@ -60,9 +60,9 @@ return [
     */
 
     'providers' => [
-        'usuarios' => [
+        'user' => [
             'driver' => 'eloquent',
-            'model' => App\Models\Usuario::class,  // Cambiar a tu modelo Usuario
+            'model' => App\Models\User::class,  // Cambiar a tu modelo Usuario
         ],
     ],
 
